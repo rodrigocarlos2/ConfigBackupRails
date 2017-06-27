@@ -8,6 +8,7 @@ Show tutorial for create database backup using backup and whenever gem from Rail
 
 * Insert at config.rb:
 
+'''
 Model.new(:nginx_backup, 'Description for nginx_backup') do
 archive :my_archive do |archive|
   archive.add "/etc/nginx/"
@@ -37,6 +38,8 @@ notify_by Mail do |mail|
 end
 
 end
+
+'''
 
 * Edit also the file /models/name_backup.rb and insert:
 
