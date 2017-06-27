@@ -8,8 +8,6 @@ Show tutorial for create database backup using backup and whenever gem from Rail
 
 * Insert at config.rb:
 
-# encoding: utf-8
-
 Model.new(:nginx_backup, 'Description for nginx_backup') do
 archive :my_archive do |archive|
   archive.add "/etc/nginx/"
